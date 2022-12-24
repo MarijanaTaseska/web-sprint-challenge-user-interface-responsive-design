@@ -68,10 +68,13 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 
 h1 {
     font-size: 7.5rem;
+    color:rgb(225, 239, 230);
+    padding:2%;
 }
 
 h2 {
     font-size: 6rem;
+    text-align: center;
 }
 
 h3 {
@@ -85,6 +88,12 @@ h4 {
 p, a {
     font-size: 3rem;
 }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
 
 /* header section */
 header {
@@ -94,7 +103,18 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgb(0, 4, 17, .8);
 }
+.header{
+    background-color:rgb(0, 4, 17, .8);
+    text-align: center;   
+}
+nav a{
+    color:rgb(225, 239, 230);
+    padding: 2.5%;
+}
+
+
 
 /* spacer */
 .spacer {
@@ -114,11 +134,61 @@ header {
     width: 100%;
     height: auto;
     background-image: url('../img/staff-bartender.jpg');
-    background-color: rgb(0, 4, 17);
+    background-color: rgb(0, 4, 17, .8);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: rgb(225, 239, 230);
+    align-items: space-evenly;
+    
 }
+.food-h2{
+    width: 100%;
+    padding: 2%;
+}
+
+
+
+.menu-container{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 4, 17, .8);
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.menu-section{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 2%;
+    
+}
+
+p{
+    text-align: left;
+  
+}
+h4{
+width: 50%;
+padding: 2%;
+font-size: 4rem;
+}
+
+.menu-item{
+text-align: left;
+padding: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+    
+}
+
+ 
 
 /* footer section */
 footer {
@@ -126,6 +196,65 @@ footer {
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+} 
+.sign-up{ 
+    
+        padding:1%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;  
+        background-color: rgb(0, 4, 17);
+    
+}
+footer input{
+    width:auto;
+    height: auto;
+    font-size: 2rem;
+    padding: 0.5%;
+    }
+      
+
+    footer button{
+        width: auto;
+        height: auto;
+        font-size: 2rem;
+        padding: 0.5%;
+        
+    }
+        
+  .input-button{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(0, 4, 17);
+     }
+
+label{
+    color:rgb(225, 239, 230);
+    font-size: 3rem;
+}
+
+
+    .nav-container{
+        background-color: rgb(0, 4, 17);
+        display:flex;
+        justify-content:flex-end;        
+    }
+
+footer p{
+    color: rgb(225, 239, 230);
+
+}
+
+
+.copyright {
+    background-color:  rgb(0, 4, 17);
+    color:rgb(225, 239, 230);
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.5vh;
+    padding: 1.5%;
 }
 
 /* mobile media query */
@@ -137,11 +266,60 @@ footer {
         text-align: center;
         font-size: 4rem;
     }
+    .header-nav a{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
 
     /* menu */
     .menu {
         background-image: none;
+            
     }
+    .menu-section p{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+    .menu-container{
+        color:rgb(0, 4, 17);
+        background-color: rgb(225, 239, 230);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        
+        
+    }
+    .menu-container h2 {
+        border-bottom: 12px solid rgb(0, 4, 17);
+         
+    }
+    .menu-section h3{
+        border:solid rgb(0, 4, 17);
+        border-width: 3px;
+}
+
+.menu-item{
+    border-bottom: 3px solid rgb(0, 4, 17);
+    margin: 5%;
+}
+
+.menu-section h4{
+    width: 100%;
+    text-align: center;
+    
+}
+.menu-section{
+    width: 90%;
+    text-align: center;
+   
+}
+
 
     /* footer section */
     footer {
@@ -149,4 +327,23 @@ footer {
         padding-top: 2.5vh;
         font-size: 2rem;
     }
+
+    .sign-up{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .copyright{
+       text-align: center;
+       padding: 17%;
+       }
+       .input-button{
+        display: flex;
+        flex-direction: column;
+       }
 }
